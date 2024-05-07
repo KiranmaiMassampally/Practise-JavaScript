@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Boolean</title>
+  <style>
+    body{
+      text-align: center;
+    }
+  </style>
+</head>
+<h1>BAT BALL STUMP GAME</h1>
+
+<div>
+<button onclick="let computerChoice = genarateComputerChoice();
+let resultMsg;
+if(computerChoice==='Ball')
+{
+  resultMsg='User Won';
+}else if(computerChoice==='Bat'){
+  resultMsg='Its a tie!!';
+}else if(computerChoice==='stump'){
+  resultMsg='Computer won';
+}
+alert(`You have choosen Bat. Computer choice is  ${computerChoice} and ${resultMsg}`);
+
+">Bat</button>
+
+
+<button onclick="let computerChoice =genarateComputerChoice();
+let resultMsge;
+if(computerChoice==='Ball')
+{
+  resultMsge='Its a tie';
+}else if(computerChoice==='Bat'){
+  resultMsg='Computer Win';
+}else if(computerChoice==='stump'){
+  resultMsge='User won';
+}
+alert(`You have choosen Ballt. Computer choice is  ${computerChoice} and ${resultMsge}`);
+
+">Ball</button>
+<button onclick="let computerChoice = genarateComputerChoice();
+Msg2= `computer choice is ${computerChoice}`;
+let resultMsg2;
+if(computerChoice==='Ball')
+{
+  resultMsg2='Computer Win';
+}else if(computerChoice==='Bat'){
+  resultMsg2='User win';
+}else if(computerChoice==='stump'){
+  resultMsg2='Its a tie';
+}
+alert(`You have choosen Stump. Computer choice is  ${computerChoice} and ${resultMsg2}`);
+
+">Stump</button>
+</div>
+
+<body>
+  <script>
+    
+    function genarateComputerChoice(){
+      let randomNumber=Math.random()*3;
+      let computerChoice;
+      if(randomNumber>0 && randomNumber <=1){
+  computerChoice='Bat';
+ // console.log('Computer choice is');
+}else  if(randomNumber>1 && randomNumber <=2){
+  computerChoice='Ball';
+//  console.log('Computer choice is Ball');
+}
+else{
+  computerChoice='stump';
+//  console.log('Computer choice is Stump');
+}
+return computerChoice;
+    }
+  </script>
+</body>
+</html>

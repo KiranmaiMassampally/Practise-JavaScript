@@ -1,0 +1,28 @@
+.clickon{
+  color: blueviolet;
+  font-size:20px;
+  border: solid;
+  background-color: blanchedalmond;
+  cursor: pointer;
+}
+
+.clickoff{
+  color: orange;
+  font-size:20px;
+}
+.bag{
+background-color: rgb(23, 199, 26);
+border: 0cap;
+border-radius: 2cap;
+padding-left: 30px;
+padding-right: 30px;
+padding-top:5px;
+padding-bottom:5px;
+}
+.wishlist{
+border-radius: 10px;
+padding-left: 50px;
+padding-right: 40px;
+padding-top:4px;
+padding-bottom:4px;
+}
